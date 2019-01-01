@@ -38,9 +38,9 @@ public class CmisBridgeService extends CachedBindingCmisService {
 		// TODO Auto-generated method stub
 		SessionParameterMap parameters = new SessionParameterMap();
 		//connect the file share repository
-		parameters.setRepositoryId("test");
-		parameters.setBrowserBindingUrl("http://localhost:8080/chemistry-opencmis-server-fileshare/browser");
-		parameters.setUserAndPassword("test", "test");
+		parameters.setRepositoryId(Constants.REPO_ID);
+		parameters.setBrowserBindingUrl(Constants.REPO_URL);
+		parameters.setUserAndPassword(Constants.REPO_USERNAME, Constants.REPO_PASSWORD);
 		//parameters.put(SessionParameter.BINDING_TYPE, "browser");
 		parameters.put(SessionParameter.CONNECT_TIMEOUT, "60000");
 		parameters.put(SessionParameter.READ_TIMEOUT, "900000");
